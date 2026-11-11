@@ -29,135 +29,185 @@
 }
 
 .grid-template-repeat {
+    grid-template-columns: repeat(3, auto);
 }
 
 .grid-gap {
+    grid-gap: 10px;
 }
 
 /* grid-template-area */
 #grid-template-area {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar content ads"
+        "footer footer footer";
+    min-height: 400px;
+    grid-template-columns: 180px 1fr 140px;
+    grid-template-rows: auto 1fr auto;
+    gap:10px;
 
     .item {
+        padding: 10px;
     }
 
     .header {
+        grid-area: header;
     }
 
     .sidebar {
+        grid-area: sidebar;
     }
 
     .content {
+        grid-area: content;
     }
 
     .ads {
+        grid-area: ads;
     }
 
     .footer {
+        grid-area: footer;
     }
 }
 
 /* Justify Items */
 .grid-ji {
+    display: grid;
 }
 
 .ji-start {
+    justify-items: start;
 }
 
 .ji-end {
+    justify-items: end;
 }
 
 .ji-center {
+    justify-items: center;
 }
 
 .ji-stretch {
+    justify-items: stretch;
 }
 
 /* Align Items */
 
 .ai-start {
+    align-items: start;
 }
 
 .ai-end {
+    align-items: end;
 }
 
 .ai-center {
+    align-items: center;
 }
 
 .ai-stretch {
+    align-items: stretch;
 }
 
 /* Justify Content */
 .grid-jc {
+    display: grid;
 }
 
 .jc-start {
+    justify-content: start;
 }
 
 .jc-end {
+    justify-content: end;
 }
 
 .jc-center {
+    justify-content: center;
 }
 
 .jc-space-around {
+    justify-content: space-around;
 }
 
 .jc-space-between {
+    justify-content: space-between;
 }
 
 .jc-space-evenly {
+    justify-content: space-evenly;
 }
 
 /* Align Content */
 .grid-ac {
+    display: grid;
 }
 
 .ac-start {
+    align-content: start;
 }
 
 .ac-end {
+    align-content: end;
 }
 
 .ac-center {
+    align-content: center;
 }
 
 .ac-space-around {
+    align-content: space-around;
 }
 
 .ac-space-between {
+    align-content: space-between;
 }
 
 .ac-space-evenly {
+    align-content: space-evenly;
 }
 
 /* Justify Self */
 #justify-self {
+    display: grid;
 
     .js-stretch {
+        justify-self: stretch;
     }
 
     .js-center {
+        justify-self: center;
     }
 
     .js-start {
+        justify-self: start;
     }
 
     .js-end {
+        justify-self: end;
     }
 }
 
 /* Align Self */
 #align-self {
+    display: grid;
 
     .as-stretch {
+        align-self: stretch;
     }
 
     .as-center {
+        align-self: center;
     }
 
     .as-start {
+        align-self: start;
     }
 
     .as-end {
+        align-self: end;
     }
 }
