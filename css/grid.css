@@ -75,7 +75,7 @@
 
 /* Justify Items */
 .grid-ji {
-    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .ji-start {
@@ -143,7 +143,7 @@
 
 /* Align Content */
 .grid-ac {
-    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .ac-start {
