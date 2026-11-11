@@ -1,23 +1,31 @@
 /* grid */
 .grid {
+    display: grid;
 }
 
 .inline-grid {
+    display: inline-grid;
 }
 
 .grid-columns {
+    grid-template-columns: 200px 200px 200px;
 }
 
 .grid-rows {
+    grid-template-rows: 50px 50px 50px;
 }
 
 .grid-template {
+    grid-template-columns:200px 200px 200px;
+    grid-template-rows:50px 50px 50px;
 }
 
 .non-fraction {
+    grid-template-columns: 350px 350px 350px;
 }
 
 .fraction {
+    grid-template-columns: auto auto auto;
 }
 
 .grid-template-repeat {
